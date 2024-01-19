@@ -15,14 +15,14 @@
             <h1>Gerencie suas transações</h1>
 
             <h3 id="title-ref">Email</h3>
-            <input id="email" type="text" placeholder="seuemail@email.com">
+            <input id="email" type="text" placeholder="seuemail@email.com" >
 
             <h3>Senha</h3>
             <input id="password" type="password" placeholder="Digite sua senha">
 
             <p>Esqueci minha senha</p>
 
-            <button id="login">Entrar</button>
+            <button id="login" disabled="true" onclick="validateEmailAndPassword()">Entrar</button>
 
             <button id="register">Cadastrar</button>
         </div>
@@ -42,13 +42,6 @@
     appId: "1:251469616270:web:02baace326c476ef4565df"
   };
   firebase.initializeApp(firebaseConfig);
-
-  firebase.auth().signInWithEmailAndPassword("carlos.edfrei@gmail.com", "teste123").then(
-    response => {
-        console.log("success", response);
-    }).catch(error => {
-        console.log("error", error);
-    });
 
 </script>
 </html>
