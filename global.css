@@ -14,7 +14,8 @@ body{
     width: 100vw;
     font-family: "Montserrat", sans-serif;
     color: white;
-    background-image: radial-gradient(#711c91 0.05%, rgb(44, 41, 41) 90%);
+    background-image: radial-gradient(#350d43 0.05%, rgb(44, 41, 41) 90%);
+    /* background-color:#350d43; */
 }
 button:hover{
     background-color: #711c91;
