@@ -15,10 +15,10 @@
             <h1>Gerencie suas transações</h1>
 
             <h3 id="title-ref">Email</h3>
-            <input type="text" placeholder="seuemail@email.com">
+            <input id="email" type="text" placeholder="seuemail@email.com">
 
             <h3>Senha</h3>
-            <input type="password" placeholder="Digite sua senha">
+            <input id="password" type="password" placeholder="Digite sua senha">
 
             <p>Esqueci minha senha</p>
 
@@ -27,6 +27,28 @@
             <button id="register">Cadastrar</button>
         </div>
     </div>
-    <script src="index.js"></script>
+    
 </body>
+<script src="index.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-auth-compat.js"></script>
+<script>
+    const firebaseConfig = {
+    apiKey: "AIzaSyBym6--xjviHXBLh9CjCwA5kleT255gbrk",
+    authDomain: "transactions-management.firebaseapp.com",
+    projectId: "transactions-management",
+    storageBucket: "transactions-management.appspot.com",
+    messagingSenderId: "251469616270",
+    appId: "1:251469616270:web:02baace326c476ef4565df"
+  };
+  firebase.initializeApp(firebaseConfig);
+
+  firebase.auth().signInWithEmailAndPassword("carlos.edfrei@gmail.com", "teste123").then(
+    response => {
+        console.log("success", response);
+    }).catch(error => {
+        console.log("error", error);
+    });
+
+</script>
 </html>

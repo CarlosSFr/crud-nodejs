@@ -14,18 +14,10 @@ body{
     width: 100vw;
     font-family: "Montserrat", sans-serif;
     color: white;
-    background-image: radial-gradient(#711c91 1%, rgb(44, 41, 41));
+    background-image: radial-gradient(#711c91 0.05%, rgb(44, 41, 41) 90%);
 }
-
-.container{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 80%;
-    width: 75%;
-    border: 1px solid black;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    border-radius: 50px;
-    background-image: linear-gradient(to right, rgb(22, 21, 21) 20%, #711c91);
+button:hover{
+    background-color: #711c91;
+    border: 1px solid #711c91;
+    color: white;
 }

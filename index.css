@@ -14,7 +14,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     height: 70%;
-    width: 75%;
+    width: 65%;
     border: 1px solid black;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     border-radius: 50px;
@@ -49,11 +49,7 @@ button{
     color: white;
     font-size: 16px;
 }
-button:hover{
-    background-color: #711c91;
-    border: 1px solid #711c91;
-    color: white;
-}
+
 input{
     width: 50%;
     font-size: 16px;
