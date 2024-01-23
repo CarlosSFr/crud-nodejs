@@ -29,16 +29,7 @@ h3{
     margin: 10px 0 10px 0;
 }
 
-p{
-    margin: 10px 0 20px 0;
-    font-size: 14px;
-    cursor: pointer;
-    width: fit-content;
-}
-p:hover{
-    color:#711c91;
-}
-button{
+#login, #register{
     margin-bottom: 10px;
     width: 50%;
     cursor: pointer;
@@ -48,6 +39,29 @@ button{
     height: 24px;
     color: white;
     font-size: 16px;
+}
+#login:hover, #register:hover{
+    background-color: #711c91;
+    border: 1px solid #711c91;
+    color: white;
+}
+
+button[disabled]{
+    opacity: 0.6;
+}
+
+#forgotten-password{
+    border: none;
+    width: fit-content;
+    margin: 10px 0 15px 0;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+}
+#forgotten-password:hover{
+    color: #711c91;
 }
 
 input{

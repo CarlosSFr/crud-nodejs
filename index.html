@@ -15,33 +15,37 @@
             <h1>Gerencie suas transações</h1>
 
             <h3 id="title-ref">Email</h3>
-            <input id="email" type="text" placeholder="seuemail@email.com" >
+            <input id="email" type="text" placeholder="seuemail@email.com" onchange="validateFields()">
 
             <h3>Senha</h3>
-            <input id="password" type="password" placeholder="Digite sua senha">
+            <input id="password" type="password" placeholder="Digite sua senha" onchange="validateFields()">
 
-            <p>Esqueci minha senha</p>
+            <button id="forgotten-password" disabled onclick="login()">Esqueci minha senha</button>
 
-            <button id="login" disabled="true" onclick="validateEmailAndPassword()">Entrar</button>
+            <button id="login" disabled="true">Entrar</button>
 
             <button id="register">Cadastrar</button>
         </div>
     </div>
     
 </body>
-<script src="index.js" type="module"></script>
-<script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-auth-compat.js"></script>
-<script>
-    const firebaseConfig = {
-    apiKey: "AIzaSyBym6--xjviHXBLh9CjCwA5kleT255gbrk",
-    authDomain: "transactions-management.firebaseapp.com",
-    projectId: "transactions-management",
-    storageBucket: "transactions-management.appspot.com",
-    messagingSenderId: "251469616270",
-    appId: "1:251469616270:web:02baace326c476ef4565df"
-  };
-  firebase.initializeApp(firebaseConfig);
+<script src="index.js"></script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+    import "firebase/compat/auth";
 
-</script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBym6--xjviHXBLh9CjCwA5kleT255gbrk",
+      authDomain: "transactions-management.firebaseapp.com",
+      projectId: "transactions-management",
+      storageBucket: "transactions-management.appspot.com",
+      messagingSenderId: "251469616270",
+      appId: "1:251469616270:web:d01b701a7de3203a4565df"
+    };
+  
+    // Initialize Firebase
+    const auth = getAuth(app);
+    const app = initializeApp(firebaseConfig);
+  </script>
 </html>

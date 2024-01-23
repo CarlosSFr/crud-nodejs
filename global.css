@@ -17,8 +17,4 @@ body{
     background-image: radial-gradient(#350d43 0.05%, rgb(44, 41, 41) 90%);
     /* background-color:#350d43; */
 }
-button:hover{
-    background-color: #711c91;
-    border: 1px solid #711c91;
-    color: white;
-}
+
